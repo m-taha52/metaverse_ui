@@ -8,8 +8,18 @@ import { exploreWorlds } from "../constants"
 
 
 const Explore = () => (
-  <section>
-    Explore section
+  <section className={`${styles.paddings}` } id="explore" >
+    <motion.div
+          variants={staggerContainer}
+          initial='hidden'
+          whileInView="show"
+          viewport={{once: false, amount: 0.25}}
+          className = {`${styles.innerWidth} mx-auto flex flex-col `}
+    >
+      <TypingText title=" | The World" textStyles="text-center"> </TypingText>
+      <TitleText title={<> Choose the World you want <br className="md:block hidden" /> to explore  </>} textStyles="text-center"> </TitleText>
+
+    </motion.div>
   </section>
 );
 
