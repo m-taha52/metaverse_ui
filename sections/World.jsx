@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import  styles  from '../styles';
 import { staggerContainer , fadeIn } from "../utils/motion";
-import { TitleText, TypingText, MapCard} from "../components";
+import { TitleText, TypingText} from "../components";
 
 
 
@@ -61,10 +61,7 @@ const World = () => (
 
         </div>
 
-        <div className="absolute top-1/2 left-[15%] w-[220px] h-[140px]  p-[6px] sm:hidden ">
-
-          <MapCard />
-      </div>
+      
         
       </motion.div>
 
